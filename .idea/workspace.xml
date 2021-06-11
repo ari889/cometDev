@@ -3,8 +3,11 @@
   <component name="ChangeListManager">
     <list default="true" id="9bcfe8ad-175b-49df-bcb0-c80264949f42" name="Default Changelist" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/Http/Controllers/Auth/LoginController.php" beforeDir="false" afterPath="$PROJECT_DIR$/app/Http/Controllers/Auth/LoginController.php" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/app/Http/Controllers/Auth/RegisterController.php" beforeDir="false" afterPath="$PROJECT_DIR$/app/Http/Controllers/Auth/RegisterController.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/resources/views/auth/register.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/resources/views/auth/register.blade.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/Models/Role.php" beforeDir="false" afterPath="$PROJECT_DIR$/app/Models/Role.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/resources/views/auth/login.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/resources/views/auth/login.blade.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/routes/web.php" beforeDir="false" afterPath="$PROJECT_DIR$/routes/web.php" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -135,9 +138,11 @@
   </component>
   <component name="PropertiesComponent">
     <property name="RunOnceActivity.OpenProjectViewOnStart" value="true" />
+    <property name="RunOnceActivity.ShowReadmeOnStart" value="true" />
     <property name="WebServerToolWindowFactoryState" value="false" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$/../wordpress" />
     <property name="nodejs_package_manager_path" value="npm" />
-    <property name="settings.editor.selected.configurable" value="editor.preferences.fonts.default" />
+    <property name="settings.editor.selected.configurable" value="preferences.editor" />
     <property name="vue.rearranger.settings.migration" value="true" />
   </component>
   <component name="RunManager">
@@ -155,7 +160,17 @@
       <option name="presentableId" value="Default" />
       <updated>1619335713276</updated>
       <workItem from="1619335715215" duration="2185000" />
-      <workItem from="1619354939325" duration="1105000" />
+      <workItem from="1619354939325" duration="2676000" />
+      <workItem from="1619730373340" duration="2958000" />
+      <workItem from="1619738506693" duration="618000" />
+      <workItem from="1620877267321" duration="942000" />
+      <workItem from="1623156215649" duration="1489000" />
+      <workItem from="1623260300736" duration="1934000" />
+      <workItem from="1623263080583" duration="578000" />
+      <workItem from="1623342064626" duration="4136000" />
+      <workItem from="1623348374800" duration="442000" />
+      <workItem from="1623349054975" duration="1346000" />
+      <workItem from="1623410688395" duration="5150000" />
     </task>
     <servers />
   </component>
@@ -164,11 +179,5 @@
   </component>
   <component name="UnknownFeatures">
     <option featureType="com.intellij.fileTypeFactory" implementationName="*.env" />
-  </component>
-  <component name="WindowStateProjectService">
-    <state x="336" y="77" key="SettingsEditor" timestamp="1619336156377">
-      <screen x="0" y="0" width="1920" height="1040" />
-    </state>
-    <state x="336" y="77" key="SettingsEditor/1920.307.1366.728/0.0.1920.1040@0.0.1920.1040" timestamp="1619336156377" />
   </component>
 </project>
