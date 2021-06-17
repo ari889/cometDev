@@ -58,7 +58,6 @@ class RegisterController extends Controller
             'email' => ['required', 'string', 'email', 'max:255', 'unique:users'],
             'password' => ['required', 'string', 'min:8', 'confirmed'],
             'phone_number' => ['unique:users'],
-            'username' => ['required', 'unique:users']
         ]);
     }
 
@@ -74,7 +73,6 @@ class RegisterController extends Controller
             'name' => $data['name'],
             'email' => $data['email'],
             'phone_number' => $data['phone_number'],
-            'username' => $data['username'],
             'password' => Hash::make($data['password']),
         ]);
     }
@@ -93,6 +91,6 @@ class RegisterController extends Controller
 
         Notification::send($user, new AccountConfiraminationNotification($user));
         Auth::logout();
-        return redirect()->route('login');
+        return redirect()->route('admin.login');
     }
 }
