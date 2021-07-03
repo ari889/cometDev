@@ -24,6 +24,8 @@
     <!-- Main CSS -->
     <link rel="stylesheet" href="{{asset('admin/assets/css/style.css')}}">
 
+    <script src="{{asset('admin/assets/js/sweetalert.min.js')}}"></script>
+
 <!--[if lt IE 9]>
 			<script src="{{asset('admin/assets/js/html5shiv.min.js')}}"></script>
 			<script src="{{asset('admin/assets/js/respond.min.js')}}"></script>
@@ -51,6 +53,7 @@
 <!-- Custom JS -->
 <script src="{{asset('admin/assets/js/script.js')}}"></script>
 <script src="{{asset('admin/assets/js/comet/custom.js')}}"></script>
+
 
 </body>
 
