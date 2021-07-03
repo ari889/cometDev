@@ -66,7 +66,11 @@
                                                 <div class="btn-group">
 {{--                                                    <a href="#" class="btn btn-success"><i class="fa fa-eye"></i></a>--}}
                                                     <a href="#" class="btn btn-warning"><i class="fa fa-edit"></i></a>
-                                                    <a href="#" class="btn btn-danger"><i class="fa fa-trash"></i></a>
+                                                    <form action="{{route('category.destroy', $data->id)}}" method="POST">
+                                                        @csrf
+                                                        @method('DELETE')
+                                                        <button class="btn btn-danger delete-btn"><i class="fa fa-trash"></i></button>
+                                                    </form>
                                                 </div>
                                             </td>
                                         </tr>
