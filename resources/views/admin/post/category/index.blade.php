@@ -65,7 +65,7 @@
 
                                                 <div class="btn-group">
 {{--                                                    <a href="#" class="btn btn-success"><i class="fa fa-eye"></i></a>--}}
-                                                    <a href="#" class="btn btn-warning"><i class="fa fa-edit"></i></a>
+                                                    <a href="#" class="btn btn-warning" id="edit_cat" edit_id="{{$data->id}}"><i class="fa fa-edit"></i></a>
                                                     <form action="{{route('category.destroy', $data->id)}}" method="POST">
                                                         @csrf
                                                         @method('DELETE')
@@ -105,6 +105,31 @@
                         <div class="form-group">
                             <label for="">Name</label>
                             <input name="name" type="text" class="form-control">
+                        </div>
+                        <div class="form-group">
+                            <input type="submit" class="btn btn-primary mt-2" value="Add new">
+                        </div>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div class="modal fade" id="edit-category-modal">
+        <div class="modal-dialog modal-dialog-centered">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h2>Edit category</h2>
+                    <button class="close" type="button" data-dismiss="modal">&times;</button>
+                </div>
+                <div class="modal-body">
+                    <form action="{{route('category.update', 1)}}" method="POST">
+                        @csrf
+                        @method('PUT')
+                        <div class="form-group">
+                            <label for="">Name</label>
+                            <input name="name" type="text" class="form-control">
+                            <input type="hidden" name="edit_id" class="form-control">
                         </div>
                         <div class="form-group">
                             <input type="submit" class="btn btn-primary mt-2" value="Add new">

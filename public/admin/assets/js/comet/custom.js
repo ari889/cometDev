@@ -44,5 +44,23 @@
             }
         });
 
+        /**
+         * categoty edit
+         */
+        $(document).on('click', '#edit_cat', function(e){
+            e.preventDefault();
+
+            let id = $(this).attr('edit_id');
+
+            $.ajax({
+                url: 'category/'+id+'/edit',
+                success: function(data){
+                    $('#edit-category-modal form input[name="name"]').val(data.name);
+                    $('#edit-category-modal form input[name="edit_id"]').val(data.id);
+                    $('#edit-category-modal').modal('show');
+                }
+            });
+        });
+
     });
 })(jQuery)
