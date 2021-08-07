@@ -37,6 +37,8 @@ Route::post('admin/register', [App\Http\Controllers\Auth\RegisterController::cla
  * post routes
  */
 Route::resource('post', 'App\Http\Controllers\PostController');
+Route::get('post-trash', 'App\Http\Controllers\PostController@postTrash')->name('post.trash');
+Route::get('post-trash-update/{id}', 'App\Http\Controllers\PostController@postTrashUpdate')->name('post.trash.update');
 
 
 /**

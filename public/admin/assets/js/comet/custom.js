@@ -1,5 +1,13 @@
 (function($){
     $(document).ready(function(){
+        /**
+         * add ck editor
+         */
+        CKEDITOR.replace( 'post_editor');
+
+        //select 2
+        $('.post-tag-select').select2();
+
         //logout features
         $(document).on('click', '#user_logout_btn', function(e){
             e.preventDefault();
@@ -62,5 +70,55 @@
             });
         });
 
+        /**
+         * post img load
+         */
+        $(document).on('change', '#feature-image', function(e){
+            let image = URL.createObjectURL(e.target.files[0]);
+            $('.post-img-load').attr('src', image);
+        });
+
+        /**
+         * gallery image
+         */
+        $(document).on('change', '#gallery-image', function(e){
+            let img_gal = '';
+            for(let i = 0;i<e.target.files.length;i++){
+                let file_url = URL.createObjectURL(e.target.files[i]);
+                img_gal += '<img src="'+file_url+'" class="shadow">';
+            }
+            $('.post-gallery-img').html(img_gal);
+        });
+
+
+        /**
+         * select post format
+         */
+        $(document).on('change', '#post_format', function(e){
+            let format = $(this).val();
+            if(format == 'Image'){
+                $('.post_image').show();
+            }else{
+                $('.post_image').hide();
+            }
+
+            if(format == 'Gallery'){
+                $('.post_gallery').show();
+            }else{
+                $('.post_gallery').hide();
+            }
+
+            if(format == 'Video'){
+                $('.post_video').show();
+            }else{
+                $('.post_video').hide();
+            }
+
+            if(format == 'Audio'){
+                $('.post_audio').show();
+            }else{
+                $('.post_audio').hide();
+            }
+        });
     });
 })(jQuery)

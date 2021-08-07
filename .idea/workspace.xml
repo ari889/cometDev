@@ -3,9 +3,13 @@
   <component name="ChangeListManager">
     <list default="true" id="9bcfe8ad-175b-49df-bcb0-c80264949f42" name="Default Changelist" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/resources/views/admin/layouts/menu.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/resources/views/admin/layouts/menu.blade.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/resources/views/admin/post/tag/index.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/resources/views/admin/post/tag/index.blade.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/routes/web.php" beforeDir="false" afterPath="$PROJECT_DIR$/routes/web.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/Http/Controllers/PostController.php" beforeDir="false" afterPath="$PROJECT_DIR$/app/Http/Controllers/PostController.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/Models/Post.php" beforeDir="false" afterPath="$PROJECT_DIR$/app/Models/Post.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/database/migrations/2021_06_21_155203_create_posts_table.php" beforeDir="false" afterPath="$PROJECT_DIR$/database/migrations/2021_06_21_155203_create_posts_table.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/admin/assets/css/style.css" beforeDir="false" afterPath="$PROJECT_DIR$/public/admin/assets/css/style.css" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/admin/assets/js/comet/custom.js" beforeDir="false" afterPath="$PROJECT_DIR$/public/admin/assets/js/comet/custom.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/resources/views/admin/layouts/app.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/resources/views/admin/layouts/app.blade.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/resources/views/admin/post/index.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/resources/views/admin/post/index.blade.php" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -138,7 +142,7 @@
     <property name="RunOnceActivity.OpenProjectViewOnStart" value="true" />
     <property name="RunOnceActivity.ShowReadmeOnStart" value="true" />
     <property name="WebServerToolWindowFactoryState" value="false" />
-    <property name="last_opened_file_path" value="$PROJECT_DIR$/../wordpress" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$" />
     <property name="nodejs_package_manager_path" value="npm" />
     <property name="settings.editor.selected.configurable" value="preferences.lookFeel" />
     <property name="vue.rearranger.settings.migration" value="true" />
@@ -181,7 +185,26 @@
       <workItem from="1625313170234" duration="176000" />
       <workItem from="1625313386669" duration="75000" />
       <workItem from="1625344714838" duration="8062000" />
-      <workItem from="1625518654288" duration="1690000" />
+      <workItem from="1625518654288" duration="7764000" />
+      <workItem from="1625609697459" duration="3053000" />
+      <workItem from="1626240897544" duration="35000" />
+      <workItem from="1626533201762" duration="851000" />
+      <workItem from="1627145569190" duration="1737000" />
+      <workItem from="1627147377633" duration="272000" />
+      <workItem from="1627147688141" duration="367000" />
+      <workItem from="1627213016664" duration="207000" />
+      <workItem from="1627213643884" duration="1000" />
+      <workItem from="1627213672274" duration="30000" />
+      <workItem from="1627219744385" duration="52000" />
+      <workItem from="1627219841151" duration="14000" />
+      <workItem from="1628271138735" duration="33000" />
+      <workItem from="1628271237751" duration="6000" />
+      <workItem from="1628271593211" duration="20000" />
+      <workItem from="1628271743911" duration="52000" />
+      <workItem from="1628271857214" duration="6000" />
+      <workItem from="1628272140760" duration="28000" />
+      <workItem from="1628272276356" duration="149000" />
+      <workItem from="1628272475270" duration="22000" />
     </task>
     <servers />
   </component>
@@ -190,5 +213,11 @@
   </component>
   <component name="UnknownFeatures">
     <option featureType="com.intellij.fileTypeFactory" implementationName="*.env" />
+  </component>
+  <component name="WindowStateProjectService">
+    <state x="511" y="324" key="#com.intellij.fileTypes.FileTypeChooser" timestamp="1628272294827">
+      <screen x="0" y="0" width="1920" height="1040" />
+    </state>
+    <state x="511" y="324" key="#com.intellij.fileTypes.FileTypeChooser/1920.304.1366.728/0.0.1920.1040@0.0.1920.1040" timestamp="1628272294827" />
   </component>
 </project>

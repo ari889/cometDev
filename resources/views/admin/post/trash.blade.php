@@ -33,7 +33,7 @@
                         <br>
                         <div class="card">
                             <div class="card-header">
-                                <h4 class="card-title">All posts (Published)</h4>
+                                <h4 class="card-title">All posts (Trashed)</h4>
                                 <a href="{{ route('post.index') }}" class="badge badge-primary mt-3">Published {{ ($published == 0 ? '' : $published) }}</a>
                                 <a href="{{ route('post.trash') }}" class="badge badge-danger mt-3">Trash {{ ($trash == 0 ? '' : $trash) }}</a>
                             </div>
@@ -45,10 +45,6 @@
                                             <th>#</th>
                                             <th>Post Name</th>
                                             <th>Post Type</th>
-                                            <th>Post Catrgory</th>
-                                            <th>Post Tag</th>
-                                            <th>Time</th>
-                                            <th>Status</th>
                                             <th>Action</th>
                                         </tr>
                                         </thead>
@@ -61,22 +57,13 @@
                                                 <td>{{$loop->index+1}}</td>
                                                 <td>{{$data->title}}</td>
                                                 <td>{{$featured_data -> post_type}}</td>
-                                                <td></td>
-                                                <td></td>
-                                                <td>{{$data->created_at -> diffForHumans()}}</td>
                                                 <td>
-                                                    <div class="status-toggle">
-                                                        <input type="checkbox" status_id="{{$data->id}}" value="active" id="cat_status_{{$loop->index+1}}" class="check cat_check" {{($data->status == true ? 'checked=""' : '')}}>
-                                                        <label for="cat_status_{{$loop->index+1}}" class="checktoggle">checkbox</label>
-                                                    </div>
-                                                </td>
-                                                <td>
-
-                                                    <div class="btn-group">
-                                                        {{--                                                    <a href="#" class="btn btn-success"><i class="fa fa-eye"></i></a>--}}
-                                                        <a href="#" class="btn btn-warning" id="edit_cat" edit_id="{{$data->id}}"><i class="fa fa-edit"></i></a>
-                                                        <a href="{{ route('post.trash.update', $data->id) }}" class="btn btn-danger"><i class="fa fa-trash"></i></a>
-                                                    </div>
+                                                    <a href="{{ route('post.trash.update', $data->id) }}" class="btn btn-info">Data Recover</a>
+                                                    <form class="d-inline-block" action="{{ route('post.destroy', $data->id) }}" method="POST">
+                                                        @csrf
+                                                        @method('DELETE')
+                                                        <button type="submit" class="btn btn-danger">Permanently Delete</button>
+                                                    </form>
                                                 </td>
                                             </tr>
                                         @endforeach
